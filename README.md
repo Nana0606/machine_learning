@@ -1,5 +1,5 @@
 # machine_learning
-机器学习、数据挖掘小练习存档。
+机器学习、深度学习、数据挖掘算法小练习存档。
 
 - Iris_classification、face_recognition_and_similar_face_found、handwriting_recognition、newsgroups_classification是研究生期间“机器学习”课程作业。这几份作业为了熟悉流程，所以所有的输入处理都是使用下载的文件，而不是直接调用load()获取数据。
 
