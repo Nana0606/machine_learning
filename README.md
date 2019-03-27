@@ -11,13 +11,13 @@
 
 （1）鸢尾花的数据分布如下：
 
-<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/iris_distribution.png" width="50%" alt="Iris数据分布"/></div>
+<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/iris_distribution.png" width="60%" alt="Iris数据分布"/></div>
 
 由于数据具有4个维度，因为我们两两观察属性间的分布，从上图可以看出两两属性之间的分界线还是比较明显的。
 
 （2）结果比较
 
-<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/iris_result_compare.png" width="50%" alt="Iris结果比较"/></div>
+<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/iris_result_compare.png" width="40%" alt="Iris结果比较"/></div>
 
 观察上图可知，Logsitic回归和MLP分类器对算法的测试结果都是完全正确的，其precision、recall和f1-score都是1。因此，就此数据集而言，决策树的性能更差一些。
 
@@ -28,13 +28,13 @@
 
 （1）人脸分类识别结果
 
-<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/face_recognition_result.png" width="50%" alt="人脸分类识别结果"/></div>
+<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/face_recognition_result.png" width="70%" alt="人脸分类识别结果"/></div>
 
 在原始使用Adam作为优化器时，准确率为99.8%左右，而后将Adam换成了RMSprop，算法的准确率达到了100%，实验设置epoches=10，batch_size=16。当优化器为RMSprop时，训练集上每个epoches后的损失值和准确率变化如上图。
 
 （2）相似人脸发现
 
-<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/similar_face_found_result.png" width="50%" alt="相似人脸发现"/></div>
+<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/similar_face_found_result.png" width="40%" alt="相似人脸发现"/></div>
 
 实验对比结果如图，使用Multinomial Naive Bayes结果可以达到28.59%，使用Random Forest结果可以达到41.0%，使用CNN可以达到28.9%，使用CNN并使用图片增强后的准确率可以达到32%。对于表情相似度发现的任务，因为脸部表情属于面部微表情，可能只是嘴角做出上扬的动作，表情就发生了变化，因此其分类比较困难，准确率比较低。另外，训练数据也比较少。
 
@@ -69,13 +69,13 @@
 
 （1）训练集和测试集效果对比
 
-<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/news_group_test_train_compare.png" width="50%" alt="训练集和测试集效果对比"/></div>
+<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/news_group_test_train_compare.png" width="45%" alt="训练集和测试集效果对比"/></div>
 
 从结果可知，在训练集准确率达到了96.4%，在测试集上达到了94.2%左右。
 
 （2）CNN和NB效果对比
 
-<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/news_group_cnn_nb.png" width="50%" alt="CNN和NB效果对比"/></div>
+<div align=center><img src="https://github.com/Nana0606/machine_learning/blob/master/imgs/news_group_cnn_nb.png" width="40%" alt="CNN和NB效果对比"/></div>
 
 使用CNN模型和使用NB模型的执行结果对比如下图，从图中可以看出，相比较于NB，CNN具有绝对的优势。但是就执行效率来说，CNN效率较低，需要消耗大量的硬件资源，NB的效率更高些。
 
