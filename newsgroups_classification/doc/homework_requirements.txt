@@ -1,0 +1,3 @@
+Project 3: 文本分类
+数据集：http://www.cs.cmu.edu/afs/cs/project/theo-11/www/naive-bayes.html
+任务：1000个文档分成20类，五重交叉验证结果

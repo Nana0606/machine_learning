@@ -1,0 +1,12 @@
+data: 人脸识别数据集
+cnn_faces_accuracy.py: cnn accuracy数据可视化
+cnn_faces_loss.py: cnn loss数据可视化
+cnn_faces.py: cnn 人脸识别
+cnn_similar_faces_augment.py: 训练集中使用增强数据的数据进行训练，使用CNN进行相似度表情发现
+cnn_similar_faces.py: 相似表情发现
+data_augmentation.py: 数据增强代码，进行图片的旋转、伸缩等
+Nb.py: 使用NB进行相似人脸发现
+result_similar_compare.py: 相似人脸发现的结果对比可视化
+Rf.py: 使用随机森林进行相似人脸发现
+Utils.py: 图片文件读取等接口
+

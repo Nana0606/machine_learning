@@ -1,0 +1,4 @@
+UCI数据集：http://archive.ics.uci.edu/ml/index.php
+任选一个数据集
+任选一种ML算法：逻辑回归+决策树+神经网络
+源码+实验报告

@@ -1,0 +1,6 @@
+Final Project: 人脸识别
+数据：CMU Machine Learning Faces
+http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/faces.html
+描述：20人，每人32张脸图(含表情)
+任务1：使用机器学习进行人脸分类识别，给出识别准确率
+任务2：使用聚类或分类算法发现表情相似的脸图

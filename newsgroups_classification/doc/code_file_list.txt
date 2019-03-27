@@ -1,0 +1,5 @@
+data: 新闻数据集
+3layer_visual.py: 3层网络结果可视化
+cnn_glove_cv.py: cnn训练模型，glove预训练词向量，交叉验证
+compare.py: cnn和nb结果比较可视化
+nb_classifier.py: 使用朴素贝叶斯进行新闻分类

@@ -1,0 +1,4 @@
+Project 2：字符识别
+数据集：MNIST手写识别数据集 http://yann.lecun.com/exdb/mnist/
+任务：使用神经网络或深度学习识别字符
+源码+实验报告

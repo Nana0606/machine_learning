@@ -1,0 +1,17 @@
+Fashion_MNIST_data: 存储Fashion MNIST数据的文件夹
+logs：nn_mnist_all_visualization.py生成的神经网络的结构及参数文件
+MNIST_data：存储MNIST数据的文件夹
+dataView_fashion_mnist.py: 查看fashion-mnist数据相关信息
+dataView_mnist.py：查看mnist数据相关信息
+nn_fashion_mnist_all.py：使用全部5种优化方法，数据集为Fashion MNIST
+nn_mnist_all.py：使用全部5种优化方法，数据集为MNIST
+nn_mnist_all_visualization.py：为了使用tensorboard查看网络结构，代码和nn_mnist_all.py相同，只是加入了将网络结构存储为文件的代码。
+nn_mnist_with_adam.py：使用Adam优化算法代替SGD优化算法
+nn_mnist_without_activation.py：去掉激活函数
+nn_mnist_without_exponential_decay：去掉指数衰减学习率
+nn_mnist_without_hidden_layer.py：去掉隐藏层
+nn_mnist_without_moving_average.py：去掉滑动平均模型
+nn_mnist_without_regularization.py：去掉正则化
+visualization_diff_models.py：5种模型数据画图
+visualization_nn.py：使用所有优化方法得到的数据画图
+visualization_nn_mnist&fashionMnist.py：MNIST和Fashion-MNIST数据对比
