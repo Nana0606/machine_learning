@@ -9,7 +9,7 @@ function:
 import matplotlib.pyplot as plt
 import numpy as np
 
-def readData(filepath):
+def read_data(filepath):
     '''
     :param: filepath: the path of samples
     :return: iris_matrix_X： a matrix of attributes
@@ -27,7 +27,7 @@ def readData(filepath):
     return iris_matrix_X, iris_array_y
 
 filepath = './data/bezdekIris.data.txt'
-iris_X, iris_y = readData(filepath)
+iris_X, iris_y = read_data(filepath)
 
 plt.subplot(441)    # 表示把画布分成4行4列，后面第三个数字范围可以是1~16
 plt.ylabel('petal width')

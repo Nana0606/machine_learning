@@ -24,7 +24,7 @@ TRAINING_STEPS = 30000   # 训练轮数
 
 
 # 计算神经网络的前向传播结果
-def forwardPropagation(input, avg_class, weights1, biases1, weights2, biases2):
+def forward_propagation(input, avg_class, weights1, biases1, weights2, biases2):
     if avg_class == None:
         layer1 = tf.nn.relu(tf.matmul(input, weights1) + biases1)
         output = tf.matmul(layer1, weights2) + biases2
@@ -46,7 +46,7 @@ def train(mnist):
     biases2 = tf.Variable(tf.constant(0.1, shape=[OUTPUT_NODE]))
 
     # 计算神经网络前向传播的结果。用于计算滑动平均的类为None
-    y = forwardPropagation(x, None, weights1, biases1, weights2, biases2)    # validation: (5000, 10)
+    y = forward_propagation(x, None, weights1, biases1, weights2, biases2)    # validation: (5000, 10)
 
     global_step = tf.Variable(0, trainable=False)
 

@@ -16,7 +16,7 @@ from sklearn.metrics import classification_report
 from sklearn.neural_network import MLPClassifier
 
 
-def readData(filepath):
+def read_data(filepath):
     '''
     read data and transform those data to matrix or array to use.
     :param: filepath: the path of samples
@@ -42,7 +42,7 @@ def standardization(X_train, X_test):
     X_test = ss_X.transform(X_test)    # 使用同一套规则标准化X_test
     return X_train, X_test
 
-def logisticRegression(iris_X, iris_y):
+def logistic_regression(iris_X, iris_y):
     '''
     :param iris_X: training dataset
     :param iris_y: testing dataset
@@ -57,7 +57,7 @@ def logisticRegression(iris_X, iris_y):
                                    target_names=["Iris-setosa", "Iris-versicolor", "Iris-virginica"])  # generating evaluation report automatically
     return evaluation_result
 
-def DecisionTree(iris_X, iris_y):
+def decision_tree(iris_X, iris_y):
     '''
     :param iris_X: training dataset
     :param iris_y: testing dataset
@@ -76,7 +76,7 @@ def DecisionTree(iris_X, iris_y):
     return evaluation_result
 
 
-def MLPClass(iris_X, iris_y):
+def MLP_class(iris_X, iris_y):
     '''
     :param iris_X: training dataset
     :param irix_y: testing dataset
@@ -94,14 +94,14 @@ def MLPClass(iris_X, iris_y):
 
 
 filepath = '../data/bezdekIris.data.txt'
-iris_X, iris_y = readData(filepath)
-evaluation_logistic = logisticRegression(iris_X, iris_y)
+iris_X, iris_y = read_data(filepath)
+evaluation_logistic = logistic_regression(iris_X, iris_y)
 print("下面是Logistic回归的评估结果：**************************")
 print(evaluation_logistic)
-evaluation_tree = DecisionTree(iris_X, iris_y)
+evaluation_tree = decision_tree(iris_X, iris_y)
 print("下面是决策树的评估结果：**************************")
 print(evaluation_tree)
-evaluation_MLPclf = MLPClass(iris_X, iris_y)
+evaluation_MLPclf = MLP_class(iris_X, iris_y)
 print("下面是MLP分类器的评估结果：**************************")
 print(evaluation_MLPclf)
 

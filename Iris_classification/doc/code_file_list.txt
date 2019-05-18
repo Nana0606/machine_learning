@@ -1,4 +1,4 @@
 data: 鸢尾花数据集
 algorithms: 主算法代码
-algsComparision: 算法结果对比可视化
-dataDistribution：数据分布可视化
+algs_comparision: 算法结果对比可视化
+data_distribution：数据分布可视化

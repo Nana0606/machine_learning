@@ -1,8 +1,8 @@
 Fashion_MNIST_data: 存储Fashion MNIST数据的文件夹
 logs：nn_mnist_all_visualization.py生成的神经网络的结构及参数文件
 MNIST_data：存储MNIST数据的文件夹
-dataView_fashion_mnist.py: 查看fashion-mnist数据相关信息
-dataView_mnist.py：查看mnist数据相关信息
+data_view_fashion_mnist.py: 查看fashion-mnist数据相关信息
+data_view_mnist.py：查看mnist数据相关信息
 nn_fashion_mnist_all.py：使用全部5种优化方法，数据集为Fashion MNIST
 nn_mnist_all.py：使用全部5种优化方法，数据集为MNIST
 nn_mnist_all_visualization.py：为了使用tensorboard查看网络结构，代码和nn_mnist_all.py相同，只是加入了将网络结构存储为文件的代码。

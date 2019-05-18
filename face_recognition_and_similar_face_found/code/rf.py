@@ -43,7 +43,7 @@ def readpgm(name):
     return (np.array(data[3:]),(data[1],data[0]),data[2])
 
 
-def readData():
+def read_data():
     """
     将faces文件中的数据读取出来，并获取标签信息
     :return: X，一个3维矩阵（图片数，LENGTH,WIDTH），y标签，是一个长度为图片数的向量
@@ -74,7 +74,7 @@ def readData():
 
 
 if __name__ == '__main__':
-    X, y = readData()
+    X, y = read_data()
     X_data = np.array(X)
     y_data = np.array(y)
     print("X的格式为： ", X_data.shape)

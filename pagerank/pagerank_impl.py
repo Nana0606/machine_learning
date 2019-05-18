@@ -15,7 +15,7 @@ a = np.array([
     [0, 0, 1, 0]
 ], dtype=float)
 
-def transitionMatrix(a):
+def transition_matrix(a):
     """
     根据邻接矩阵求转移矩阵 
     :param a: 邻接矩阵
@@ -38,9 +38,9 @@ def initializeV(N):
         v[i] = 1 / N    # 每一个元素值相等，大小为1/N
     return v
 
-def pageRank(p, v):
+def pagerank(p, v):
     """
-    pageRank代码，使用迭代的思想，直到达到平稳状态，使用公式v_{n+1} = p^T * v_{n}
+    pagerank代码，使用迭代的思想，直到达到平稳状态，使用公式v_{n+1} = p^T * v_{n}
     :param p: 转移矩阵
     :param v: 初始化的v矩阵
     :return: 平稳状态v矩阵
@@ -54,9 +54,9 @@ def pageRank(p, v):
     return v_then
 
 if __name__ == '__main__':
-    p = transitionMatrix(a)
+    p = transition_matrix(a)
     v = initializeV(a.shape[0])
-    v_then = pageRank(p, v)
+    v_then = pagerank(p, v)
     print("转移矩阵是：", p)
     print("初始化v向量是：", v)
     print("最后的平稳状态是", v_then)

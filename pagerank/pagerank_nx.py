@@ -8,7 +8,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-def buildDiGraph(edges):
+def build_diGraph(edges):
     """
     初始化图
     :param edges: 存储有向边的列表
@@ -21,7 +21,7 @@ def buildDiGraph(edges):
 
 if __name__ == '__main__':
     edges = [("A", "B"), ("B", "A"), ("B", "C"), ("C", "B"), ("A", "D"), ("D", "C")]
-    G = buildDiGraph(edges)
+    G = build_diGraph(edges)
 
     # 将图形画出
     layout = nx.spring_layout(G)

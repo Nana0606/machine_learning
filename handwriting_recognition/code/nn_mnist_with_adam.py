@@ -25,7 +25,7 @@ MOVING_AVERAGE_DECAY = 0.99   # 滑动平均衰减率，decay越大模型越趋�
 
 
 # 计算神经网络的前向传播结果
-def forwardPropagation(input, avg_class, weights1, biases1, weights2, biases2):
+def forward_propagation(input, avg_class, weights1, biases1, weights2, biases2):
     if avg_class == None:
         layer1 = tf.nn.relu(tf.matmul(input, weights1) + biases1)
         output = tf.matmul(layer1, weights2) + biases2
@@ -47,14 +47,14 @@ def train(mnist):
     biases2 = tf.Variable(tf.constant(0.1, shape=[OUTPUT_NODE]))
 
     # 计算神经网络前向传播的结果。用于计算滑动平均的类为None
-    y = forwardPropagation(x, None, weights1, biases1, weights2, biases2)    # validation: (5000, 10)
+    y = forward_propagation(x, None, weights1, biases1, weights2, biases2)    # validation: (5000, 10)
 
     global_step = tf.Variable(0, trainable=False)
     variable_averages = tf.train.ExponentialMovingAverage(MOVING_AVERAGE_DECAY, global_step)
     variables_averages_op = variable_averages.apply(tf.trainable_variables())
 
     # 使用滑动平均之后的输出值，在计算交叉熵时仍然使用y，在最后输出时使用average_y
-    average_y = forwardPropagation(x, variable_averages, weights1, biases1, weights2, biases2)
+    average_y = forward_propagation(x, variable_averages, weights1, biases1, weights2, biases2)
     # 计算交叉熵作为刻画预测值和真实值之间差距的损失函数,logits表示隐藏层线性变换后非归一化后的结果,label是神经网络的期望输出(其输入格式需要是(batch_size))，y_是稀疏表示的，需要转化为非系数表示
     # argmax()输出的是每一列最大值所在的数组下标
     cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=y, labels=tf.argmax(y_, 1))
