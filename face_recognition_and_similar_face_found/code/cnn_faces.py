@@ -99,7 +99,7 @@ def cnn_model():
     # model.add(Dropout(0.8))
     model.add(Flatten())
     model.add(Dense(8*8*32, activation='relu'))
-    model.add(Dropout(0.8))
+    model.add(Dropout(0.5))
     model.add(Dense(NUM_CLASSES, activation='softmax'))
     model.compile(optimizer=keras.optimizers.RMSprop(),
                   loss='categorical_crossentropy',
